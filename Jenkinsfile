@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh '/usr/local/apache-ant-1.10.1/bin/ant war' 
             }
-	stage('Repository')
+	stage('Build')
 	    steps {
 		sh 'cp dist/AntExample.war /var/www/html'
 	    }
