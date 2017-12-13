@@ -12,6 +12,7 @@ pipeline {
     post {
 	always {
 	    archiveArtifacts artifacts: '**/*.war', caseSensitive: false, fingerprint: true 
+	    emailext attachLog: true, body: '', compressLog: true, subject: '', to: 'basil1987@gmail.com'
 	}
     }
 }
