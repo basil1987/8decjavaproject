@@ -9,6 +9,7 @@ pipeline {
 	    steps {
 		sh 'cp dist/AntExample.war /var/www/html'
 	    }
+        }
     }
 }
 
