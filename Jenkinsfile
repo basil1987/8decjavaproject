@@ -1,5 +1,7 @@
 pipeline {
-    agent app01
+    agent{
+	label tomcat
+    } 
 
     stages {
         stage('Build'){
