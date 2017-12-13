@@ -5,7 +5,7 @@ public class UserTest {
    User MyUser = new User(basil,DevOPS12345);
 
    @Test
-   public void testgetName {
+   public void testgetName() {
 	assertEquals(MyUser.getName(), basil);
    }
 }
