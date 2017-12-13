@@ -8,4 +8,5 @@ public class UserTest {
    public void testgetName {
 	assertEquals(MyUser.getName(), basil);
    }
+}
 
