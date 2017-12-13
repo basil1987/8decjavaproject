@@ -11,7 +11,7 @@ pipeline {
     }
     post {
 	always {
-	    archive '**/*.war'
+	    archiveArtifacts artifacts: '**/*.war', caseSensitive: false, fingerprint: true 
 	}
     }
 }
