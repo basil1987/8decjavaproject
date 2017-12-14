@@ -8,5 +8,10 @@ pipeline {
 	  sh 'cp dist/*.war /var/www/html'
 	}
       }
+      stage('ARCHIEVE') {
+	steps {
+	  archiveArtifacts artifacts: '**/*.war', fingerprint: true
+	}
+      }
    }
 }
