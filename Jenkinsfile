@@ -3,8 +3,10 @@ pipeline {
 
    stages {
       stage('BUILD') {
-	sh 'ant war'
-	sh 'cp dist/*.war /var/www/html'
+	steps {
+	  sh 'ant war'
+	  sh 'cp dist/*.war /var/www/html'
+	}
       }
    }
 }
